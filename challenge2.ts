@@ -16,8 +16,8 @@ const map = <T, S>(array: T[], callback: (value: T) => S): S[] => {
 const forEach = <T>(array: T[], callback: (value: T) => void): void => {
   array.reduce((_, currentValue) => {
     callback(currentValue);
-    return undefined;
-  }, undefined);
+    return null;
+  }, null);
 };
 
 // Filter
